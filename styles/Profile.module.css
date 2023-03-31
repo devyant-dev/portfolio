@@ -1,0 +1,100 @@
+.profile_wrapper {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid var(--main_color);
+}
+.profile_wrapper .profile_img {
+  width: 24.1%;
+  height: 204px;
+  border-radius: 50%;
+  background-color: aqua;
+}
+.profile_wrapper .profile_img img {
+  width: 100%;
+}
+.profile_wrapper .profile_txt {
+  background-color: red;
+}
+
+.resume_wrapper {
+  display: flex;
+  width: 100%;
+  background-color: orange;
+}
+.resume_wrapper .resume_part01 {
+  width: 40%;
+  padding-right: 50px;
+  border-right: 1px solid var(--main_color);
+  background-color: antiquewhite;
+}
+.resume_wrapper .resume_part01 .contact_me {
+  width: 100%;
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part01 .contact_me p {
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part01 .contact_me .contact_content {
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: orange;
+}
+.resume_wrapper .resume_part01 .contact_me .contact_content:last-child {
+  margin-bottom: 0;
+}
+.resume_wrapper .resume_part01 .contact_me .contact_content .cont_type {
+  width: 40%;
+  font-size: 30px;
+}
+.resume_wrapper .resume_part01 .contact_me .contact_content .cont_value {
+  width: 60%;
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--main_color);
+}
+.resume_wrapper .resume_part01 .education {
+  width: 100%;
+}
+.resume_wrapper .resume_part01 .education p {
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part02 {
+  width: 60%;
+  padding-left: 50px;
+}
+.resume_wrapper .resume_part02 .skills {
+  width: 100%;
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part02 .skills p {
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part02 .work_ex {
+  width: 100%;
+  border-bottom: 1px solid var(--main_color);
+}
+.resume_wrapper .resume_part02 .work_ex p {
+  border-bottom: 1px solid var(--main_color);
+}
+
+.resume_title {
+  font-size: 50px;
+  color: var(--main_color);
+  font-weight: 700;
+}
+
+.resume_sub_title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.resume_title_common {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.resume_content_common {
+  width: 100%;
+  padding: 80px 20px;
+}/*# sourceMappingURL=Profile.module.css.map */
