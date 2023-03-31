@@ -1,4 +1,4 @@
-import Layout from '@/component/layout';
+import Layout from '@/component/Layout';
 import '@/styles/globals.scss';
 import Head from 'next/head';
 import Link from 'next/link';
