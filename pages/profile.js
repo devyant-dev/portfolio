@@ -8,6 +8,7 @@ import WorkEx from '@/component/WorkEx';
 
 
 
+
 const profile = () => {
 
 
@@ -15,12 +16,12 @@ const profile = () => {
     <div className='page_container'>
       <section className={style.profile_wrapper}>
         <div className={style.profile_img}>
-\         <img src="" alt="profile_image" />
+          <img src="/img/profile.png" alt="" />
         </div>
 
-        <dir className={style.profile_txt}>
-          sdsfsdf
-        </dir>
+        <div className={style.profile_txt}>
+          이곳은 간단한 자기 소개를 적는 공간입니다. 당장 생각 나는게 없어서 이정도만 적습니다. 어렵습니다. 도와주세요. 추가로 쓸게 뭐가 있을까요......... 드럽게 어렵다..!!!!!아나런이러닝러ㅏㄴㅇ러ㅏ니포폴 어렵다
+        </div>
       </section>
 
       <section className={style.resume_wrapper}>

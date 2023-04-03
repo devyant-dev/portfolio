@@ -1,13 +1,16 @@
 .profile_wrapper{
   display: flex;
+  align-items: center;
   width: 100%;
+  padding-bottom: 80px;
   border-bottom: 1px solid var(--main_color);
 
   .profile_img{
     width: 19.270vw;
     height: 19.270vw;
     border-radius: 50%;
-    background-color: aqua;
+    overflow: hidden;
+    background-color: #F7C0D1;
 
     img{
       width: 100%;
@@ -15,7 +18,9 @@
   }
 
   .profile_txt{
-    background-color: red;
+    width: calc(100% - 19.270vw);
+    padding-left: 3.6458vw;
+    font-size: var(--30px);
   }
 }
 
@@ -26,7 +31,7 @@
 
   .resume_part01{
     width: 40%;
-    padding-right: 2.604vw;
+    padding-right: var(--50px);
     border-right: 1px solid var(--main_color);
 
     .contact_me{
@@ -44,12 +49,12 @@
         
         .cont_type{
           width: 40%;
-          font-size: 1.562vw;
+          font-size: var(--30px);
         }
 
         .cont_value{
           width: 60%;
-          font-size: 1.302vw;
+          font-size: var(--25px);
           font-weight: 700;
           color: var(--main_color);
         }
@@ -70,18 +75,18 @@
         }
 
         .edu_con_title{
-          font-size: 1.562vw;
+          font-size: var(--30px);
           font-weight: 700;
         }
 
         .edu_con_sub_title{
           margin: 15px 0;
-          font-size: 1.302vw;
+          font-size: var(--25px);
           color: var(--sub_color);
         }
 
         .edu_con_period{
-          font-size: 1.041vw;
+          font-size: var(--20px);
           color: var(--sub_color);
         }
       }
@@ -92,14 +97,18 @@
 
   .resume_part02{
     width: 60%;
-    padding-left: 2.604vw;
+    padding-left: var(--50px);
 
     .skills{
       width: 100%;
       border-bottom: 1px solid var(--main_color);
 
-      .skill_cont{
+      .skill_common_cont{
         width: 100%;
+
+        > .resume_sub_title{
+          margin-bottom: 30px;
+        }
 
         .skill_icon_wrap{
           display: flex;
@@ -119,17 +128,16 @@
               width: 4.166vw;
               height:  4.166vw;
               border-radius: 50%;
-              background-color: green;
 
               >span{
-                font-size: 1.562;
+                font-size: var(--30px);
                 color: #F1F1E6;
               }
             }
 
             .skill_txt{
               margin-top: 15px;
-              font-size: 0.781vw;
+              font-size: var(--15px);
               text-align: center;
             }
           }
@@ -137,11 +145,34 @@
         }
       }
 
+      .frontend{
+        margin-bottom: 50px;
+      }
+
+      .deploy{
+        display: inline-block;
+        width: 50%;
+      }
+
+      .tool{
+        display: inline-block;
+        width: 50%;
+      }
+
     }
 
     .work_ex{
       width: 100%;
 
+      .resume_period{
+        margin: 15px 0 30px 0;
+        font-size: var(--20px);
+        color: var(--sub_color);
+      }
+
+      .resume_txt{
+        font-size: var(--15px);
+      }
     }
 
 
@@ -157,14 +188,14 @@
 // 공통 클래스
 
 .resume_title{
-  font-size: 2.604vw;
+  font-size: var(--50px);
   color: var(--main_color);
   font-weight: 700;
   border-bottom: 1px solid var(--main_color);
 }
 
 .resume_sub_title{
-  font-size: 1.562vw;
+  font-size: var(--30px);
   font-weight: 700;
 }
 
@@ -178,3 +209,112 @@
   width: 100%;
   padding: 80px 4.166vw;
 }
+
+
+
+
+// circle bg_color
+
+
+.frontend{
+
+  .skill_icon{
+    margin-bottom: 20px;
+
+    &:nth-child(1){
+      .skill_circle{
+        background-color: var(--main_color);
+      }
+    }
+  
+    &:nth-child(2){
+      .skill_circle{
+        background-color: var(--sub_color);
+      }
+    }
+  
+    &:nth-child(3){
+      .skill_circle{
+        background-color: #429D75;
+      }
+    }
+  
+    &:nth-child(4){
+      .skill_circle{
+        background-color: #4FAF6F;
+      }
+    }
+  
+    &:nth-child(5){
+      .skill_circle{
+        background-color: #74BE76;
+      }
+    }
+  
+    &:nth-child(6){
+      .skill_circle{
+        background-color: #B1DD72;
+      }
+    }
+  
+    &:nth-child(7){
+      .skill_circle{
+        background-color: #2B8C7F;
+      }
+    }
+  
+    &:nth-child(8){
+      .skill_circle{
+        background-color: #42B2A3;
+      }
+    }
+  
+  }
+
+}
+
+.deploy{
+
+  .skill_icon{
+
+    &:nth-child(1){
+      .skill_circle{
+        background-color: #1E884B;
+      }
+    }
+
+    &:nth-child(2){
+      .skill_circle{
+        background-color: #32B56A;
+      }
+    }
+
+    &:nth-child(3){
+      .skill_circle{
+        background-color: #4ED989;
+      }
+    }
+  }
+}
+
+.tool{
+
+  .skill_icon{
+
+    &:nth-child(1){
+      .skill_circle{
+        background-color: #13757B;
+      }
+    }
+
+    &:nth-child(2){
+      .skill_circle{
+        background-color: #37A3AA;
+      }
+    }
+
+  }
+}
+
+
+
