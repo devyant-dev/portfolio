@@ -8,7 +8,6 @@ import WorkEx from '@/component/WorkEx';
 
 
 
-
 const profile = () => {
 
 
@@ -16,7 +15,7 @@ const profile = () => {
     <div className='page_container'>
       <section className={style.profile_wrapper}>
         <div className={style.profile_img}>
-          <img src="/img/profile.png" alt="" />
+          <img src="./img/profile.png" alt="" />
         </div>
 
         <div className={style.profile_txt}>
