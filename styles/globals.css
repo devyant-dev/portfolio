@@ -1,11 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;700&family=Nanum+Myeongjo:wght@400;700;800&display=swap");
 :root {
   --max-width: 1536px;
   /* color */
   --main_color: #13595A;
+  --sub_color: #1D7B6C;
   --bg_color: #F3EBE9;
   --black: #222;
   --light_gray: #F1F1E6;
+  --70px: 3.6458vw;
+  --50px: 2.6042vw;
+  --30px: 1.5625vw;
+  --25px: 1.3021vw;
+  --20px: 1.0417vw;
+  --18px: 0.9375vw;
+  --15px: 0.7813vw;
 }
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del,
@@ -33,7 +41,6 @@ body {
   font-family: "Nanum Myeongjo", serif;
   color: var(--black);
   font-weight: 400;
-  line-height: 1;
   background-color: var(--bg_color);
 }
 
@@ -56,15 +63,19 @@ table {
 }
 
 .container {
-  width: 80%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  background-color: #ddd;
+  width: 100%;
+  margin: 150px auto;
+  padding: 0 5%;
 }
 .container .page_container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  max-width: var(--max-width);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 /*# sourceMappingURL=globals.css.map */
