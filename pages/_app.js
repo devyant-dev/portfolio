@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Link href='/'>home</Link>
       <Link href='/profile'>profile</Link>
-      <Link href='/work2'>work</Link>
+      <Link href='/work'>work</Link>
       <Layout>
         <Component {...pageProps} />
       </Layout>
