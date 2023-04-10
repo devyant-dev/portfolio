@@ -98,7 +98,10 @@
         max-height: 726px;
         overflow-y: auto;
         transition: all 1000ms;
-        opacity: 1;
+        opacity: 0;
+        animation-name: opacity0to1;
+        animation-duration: 1600ms;
+        animation-fill-mode: forwards;
 
         img{
           width: 100%;
@@ -244,6 +247,16 @@
   }
 }
 
+
+@keyframes opacity0to1{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
 
 
 
