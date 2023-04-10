@@ -3,9 +3,17 @@ import Layout from '@/component/Layout';
 import '@/styles/globals.scss';
 import Head from 'next/head';
 import Link from 'next/link';
+import { motion } from "framer-motion"
+import { useFollowPointer } from "./use-follow-pointer";
+import { useRef } from 'react';
+
+
 
 
 export default function App({ Component, pageProps }) {
+  const ref = useRef(null);
+  const { x, y } = useFollowPointer(ref);
+
   return (
     <>
       <Head>
@@ -23,6 +31,17 @@ export default function App({ Component, pageProps }) {
       <Context>
         <Layout>
           <Component {...pageProps} />
+          <motion.div
+      ref={ref}
+      className="box"
+      animate={{ x, y }}
+      transition={{
+        type: "spring",
+        damping: 3,
+        stiffness: 50,
+        restDelta: 0.001
+      }}
+    />
         </Layout>
       </Context>
     </>
