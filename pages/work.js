@@ -1,47 +1,25 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import style from '@/styles/Work.module.scss';
-import data from '../data/work.json';
+import ProjectItem from '@/component/ProjectItem';
+import { MyData } from '@/component/Context';
 
-const work2 = () => {
+const work = () => {
+
+
+  // <Link className={`${styles.linkStyle} ${router.route == '/MyPage/[id]' ? styles.activeLink : ''}`}
+  //         href={`/MyPage/${userLogin.UserID}`}></Link>
+  const {data} = useContext(MyData);
 
   return (
     <div className='page_container'>
       <div className={style.work_container}>
+        <span className={`${style.outline} ${style.line01}`}></span>
+        <span className={`${style.outline} ${style.line02}`}></span>
+        <span className={`${style.outline} ${style.line03}`}></span>
         
         { 
-          data.workdata.map( (obj, idx) =>   (<div key={idx} className={style.work_wrapper}>
-          <div className={style.work_info_wrap}>
-            <p className={style.info_num}>
-              0{obj.number}
-            </p>
-            <p className={style.info_title}>
-              {obj.title}
-            </p>
-            <p className={style.info_project}>
-              {obj.info}
-            </p>
-
-            <p className={style.info_cate}>
-              {obj.count} <br />
-              {obj.cate}
-            </p>
-          </div>
-
-          <div className={style.work_sub_wrap}>
-            <div className={style.sub_cate_wrap}>
-              <span className={style.sub_cate}>
-              {obj.type}
-              </span>
-            </div>
-
-            <div className={style.sub_icon_wrap}>
-              <div className={style.plus_row}></div>
-              <div className={style.plus_column}></div>
-            </div>
-
-          </div>
-
-        </div>
+          data.map( (obj, idx) => (
+            <ProjectItem key={idx} idx={idx} obj={obj}/>
             )
           )
         }
@@ -53,4 +31,4 @@ const work2 = () => {
   );
 };
 
-export default work2;
+export default work;

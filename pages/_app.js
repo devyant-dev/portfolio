@@ -1,3 +1,4 @@
+import Context  from '@/component/Context';
 import Layout from '@/component/Layout';
 import '@/styles/globals.scss';
 import Head from 'next/head';
@@ -19,9 +20,11 @@ export default function App({ Component, pageProps }) {
       <Link href='/'>home</Link>
       <Link href='/profile'>profile</Link>
       <Link href='/work'>work</Link>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Context>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Context>
     </>
   )
 }

@@ -26,7 +26,6 @@ $tablet: 768px;
 @include mobile ($mobile, $tablet) {
   .work_container{
     // display: flex;
-    // flex-wrap: wrap;
     // width: 100%;
     // border: 1px solid var(--main_color);
     // box-sizing: border-box;
@@ -34,44 +33,84 @@ $tablet: 768px;
     .work_wrapper{
       width: 100%;
       padding: 15px;
+      flex-wrap: wrap;
 
-      &:hover{
-        background-color: var(--main_color);
-  
+      &.box_act{
+
         .work_info_wrap{
+          width: 100%;
   
-          .info_num,
-          .info_title,
-          .info_project,
-          .info_cate,
-          .sub_cate{
-            color: var(--bg_color);
+          .info_description{
+            margin: 30px 0;
+            font-size: 10px;
           }
   
-          .info_num{
-            &::after{
-              background-color: var(--bg_color);
-            }
+          .info_btn{
+            width: 100%;
+            min-width:auto;
+            max-width: 100%;
+            margin-bottom: 30px;
+            padding: 12px 0;
+            text-align: center;
+            border: 1px solid var(--main_color);
           }
         }
-  
+        
         .work_sub_wrap{
-          .sub_cate_wrap{
-            .sub_cate{
-              color: var(--bg_color);
-            }
-          }
-          
-          .sub_icon_wrap{
-            .plus_row,
-            .plus_column{
-              background-color: var(--bg_color);
-            }
-          }
+          display: none;
         }
   
+        .work_img_wrap{
+          width: 100%;
+          max-width: 100%;
+          max-height: 300px;
+          overflow-y: auto;
+          transition: all 1000ms;
   
+          img{
+            width: 100%;
+          }
+        }
+        
       }
+
+      // &:hover{
+      //   background-color: var(--main_color);
+  
+      //   .work_info_wrap{
+  
+      //     .info_num,
+      //     .info_title,
+      //     .info_project,
+      //     .info_cate,
+      //     .sub_cate{
+      //       color: var(--bg_color);
+      //     }
+  
+      //     .info_num{
+      //       &::after{
+      //         background-color: var(--bg_color);
+      //       }
+      //     }
+      //   }
+  
+      //   .work_sub_wrap{
+      //     .sub_cate_wrap{
+      //       .sub_cate{
+      //         color: var(--bg_color);
+      //       }
+      //     }
+          
+      //     .sub_icon_wrap{
+      //       .plus_row,
+      //       .plus_column{
+      //         background-color: var(--bg_color);
+      //       }
+      //     }
+      //   }
+  
+  
+      // }
     
       .work_info_wrap{
         width: 90%;
