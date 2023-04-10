@@ -1,12 +1,11 @@
+import { motion } from "framer-motion"
+import { useFollowPointer } from "./use-follow-pointer";
+import { useRef } from 'react';
 import Context  from '@/component/Context';
 import Layout from '@/component/Layout';
 import '@/styles/globals.scss';
 import Head from 'next/head';
 import Link from 'next/link';
-import { motion } from "framer-motion"
-import { useFollowPointer } from "./use-follow-pointer";
-import { useRef } from 'react';
-
 
 
 
