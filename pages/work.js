@@ -3,7 +3,7 @@ import style from '@/styles/Work.module.scss';
 import ProjectItem from '@/component/ProjectItem';
 import { MyData } from '@/component/Context';
 
-const work = () => {
+const Work = () => {
 
 
   // <Link className={`${styles.linkStyle} ${router.route == '/MyPage/[id]' ? styles.activeLink : ''}`}
@@ -31,4 +31,4 @@ const work = () => {
   );
 };
 
-export default work;
+export default Work;
